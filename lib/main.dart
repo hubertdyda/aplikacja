@@ -1,0 +1,13 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
+import 'aplikacja.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // wczytanie .env
+  await dotenv.load(fileName: '.env');
+
+  runApp(const Aplikacja());
+}
