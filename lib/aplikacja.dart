@@ -29,16 +29,11 @@ class Aplikacja extends StatelessWidget {
   }
 }
 
-//
-// 🌟 NOWOCZESNY MOTYW (Material 3)
-// Kolor przewodni: elegancki fiolet Premier League
-//
-
 final ThemeData _motywJasny = ThemeData(
   useMaterial3: true,
 
   colorScheme: ColorScheme.fromSeed(
-    seedColor: const Color(0xFF38003C), // Premier League fiolet
+    seedColor: const Color(0xFF38003C),
     brightness: Brightness.light,
   ),
 
