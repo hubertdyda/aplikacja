@@ -109,7 +109,6 @@ class _EkranGlownyState extends State<EkranGlowny> {
     }
   }
 
-  // --- ZAKŁADKA 1: DRUŻYNY ---
   Widget _zakladkaDruzyny() {
     final modelWidoku = context.watch<ListaDruzynModelWidoku>();
 
@@ -190,7 +189,6 @@ class _EkranGlownyState extends State<EkranGlowny> {
     );
   }
 
-  // --- ZAKŁADKA 2: MECZE (pogrupowane w listy rozwijane) ---
   Widget _zakladkaMecze() {
     final modelWidoku = context.watch<ListaMeczyModelWidoku>();
 
@@ -316,7 +314,6 @@ class _EkranGlownyState extends State<EkranGlowny> {
 
     return '${format(pierwsza)} - ${format(ostatnia)}';
   }
-  // --- ZAKŁADKA 3: TABELA ---
   Widget _zakladkaTabela() {
     final modelWidoku = context.watch<TabelaModelWidoku>();
 
@@ -388,7 +385,6 @@ class _EkranGlownyState extends State<EkranGlowny> {
     );
   }
 
-  // --- ZAKŁADKA 4: POJEDYNEK DWÓCH DRUŻYN ---
   Widget _zakladkaPojedynek() {
     final modelWidoku = context.watch<ListaDruzynModelWidoku>();
     final pojedynekVM = context.watch<PojedynekModelWidoku>();
@@ -639,7 +635,6 @@ class EkranSzczegolyDruzyny extends StatelessWidget {
             if (druzyna.rokZalozenia != null)
               _wierszInfo('Rok założenia', druzyna.rokZalozenia.toString()),
             _wierszInfo('Kod', druzyna.kod),
-            // W przyszłości możesz dodać stadion, ligę, itp. jeśli masz w modelu
           ],
         ),
       ),

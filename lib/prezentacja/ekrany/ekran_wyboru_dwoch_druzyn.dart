@@ -19,7 +19,6 @@ class _EkranWyboruDwochDruzynState extends State<EkranWyboruDwochDruzyn> {
   void initState() {
     super.initState();
 
-    // Jeśli lista drużyn nie jest jeszcze załadowana, pobierz ją
     Future.microtask(() {
       final modelWidoku = context.read<ListaDruzynModelWidoku>();
       if (modelWidoku.wszystkieDruzyny.isEmpty) {
