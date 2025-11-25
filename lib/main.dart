@@ -6,7 +6,6 @@ import 'aplikacja.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // wczytanie .env
   await dotenv.load(fileName: '.env');
 
   runApp(const Aplikacja());
