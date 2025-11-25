@@ -8,9 +8,7 @@ Umożliwia:
 - wyświetlanie szczegółów drużyn,
 - przeglądanie meczów, 
 - wyświetlanie tabeli ligowej,
-- porównywanie dwóch drużyn,
-- działanie w trybie offline,
-- paginację danych (jeśli wspiera to API).
+- porównywanie dwóch drużyn.
 
 
 ## Użyte API
